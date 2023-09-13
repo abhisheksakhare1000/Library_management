@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Return a Book</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Return a Book</h1>
+    <form action="/return_book" method="post">
+        <label for="bookID">Book ID:</label>
+        <input type="text" id="bookID" name="bookID" required><br>
+
+        <label for="memberName">Member Name:</label>
+        <input type="text" id="memberName" name="memberName" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

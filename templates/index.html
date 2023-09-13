@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Welcome to Library Management System</h1>
+    <div class="container">
+        <ul class="list-unstyled d-flex justify-content-center">
+            <li><button type="button" onclick="location.href='/add_book'">Add a Book</button></li>
+            <li><button type="button" onclick="location.href='/issue_book'">Issue a Book</button></li>
+            <li><button type="button" onclick="location.href='/return_book'">Return a Book</button></li>
+            <li><button type="button" onclick="location.href='/list_books'">List All Books</button></li>
+            <li><button type="button" onclick="location.href='/list_issued_books'">List Issued Books</button></li>
+        </ul>
+    </div>
+</body>
+</html>
